@@ -13,14 +13,13 @@ export default function App(){
     async function dados(){
 
       //Olheiro da nossa database
-      await firebase.database().ref('usuarios/2').on('value', (snapshot) => {
+      await firebase.database().ref('nome').on('value', (snapshot) => {
         setNome(snapshot.val().nome);
-        setIdade(snapshot.val().idade);
       });
 
-      // await firebase.database().ref('nome').once('value', (snapshot)=> {
-      //   setNome(snapshot.val());
-      // });
+      await firebase.database().ref('idade').once('value', (snapshot)=> {
+        setIdade(snapshot.val());
+      });
 
     }
 
