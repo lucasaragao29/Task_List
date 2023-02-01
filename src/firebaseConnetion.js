@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-// Alterar suas infos
+// Alterar com suas infos
 const firebaseConfig = {
   apiKey: "",
   authDomain: "",
